@@ -9,7 +9,7 @@
   
 </p>
 
-## How to setup the project 🏗️
+## 🏗️ How to setup the project
 
 #### Clone the project
 - First clone the project on your local computer
