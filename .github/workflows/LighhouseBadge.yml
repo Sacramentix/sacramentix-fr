@@ -36,3 +36,10 @@ jobs:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         timeout-minutes: 1
+      - name: Lighthouse-Badger
+        # You may pin to the exact commit or the version.
+        # uses: MyActionWay/lighthouse-badger-action@0064f8e52023fe836d42f65e71231c54a93f7d0b
+        uses: MyActionWay/lighthouse-badger-action@v2.2
+        with:
+          # URL(s) to be checked
+          urls: https://sacramentix.netlify.app/#/
