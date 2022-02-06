@@ -53,3 +53,4 @@ jobs:
       - uses: myactionway/lighthouse-badger-action@v2.2
         with:
           urls: ${{ github.event.inputs.urls || env.URLS }}
+          badges_args: -b pagespeed -o .github/lighthouse_results -r
