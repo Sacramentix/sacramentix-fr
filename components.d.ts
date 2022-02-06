@@ -4,7 +4,9 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
+    ExternalLink: typeof import('./src/components/ExternalLink.vue')['default']
     Field: typeof import('./src/components/art/Field.vue')['default']
+    InternalLink: typeof import('./src/components/InternalLink.vue')['default']
     NeonTriangle: typeof import('./src/components/art/NeonTriangle.vue')['default']
     OpenInNew: typeof import('./src/components/OpenInNew.vue')['default']
   }
