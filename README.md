@@ -1,11 +1,43 @@
-# Vue 3 + Typescript + Vite
+# Sacramentix.fr
 
-This template should help get you started developing with Vue 3 and Typescript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This is the repo of my personnal website, where you can see my developer diaries.
 
-## Recommended IDE Setup
+## 🚀 Tech stack
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+<p align="center">
+  <a href="https://vitejs.dev" title="Vite"><img width=32 height=32 src="https://vitejs.dev/logo.svg" alt="Vite logo"></a>
+	<a href="https://www.typescriptlang.org" title="Typescript"><img width=32 height=32 src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" alt="Typescript logo"></a> 
+  <a href="https://github.com/antfu/unocss" title="Unocss"><img width=32 height=32 src="https://raw.githubusercontent.com/antfu/unocss/main/playground/public/icon-gray.svg" alt="Unocss logo"></a>
+  
+</p>
 
-## Type Support For `.vue` Imports in TS
+## 🏗️ How to setup the project
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's `.vue` type support plugin by running `Volar: Switch TS Plugin on/off` from VSCode command palette.
+#### Clone the project
+- First clone the project on your local computer
+```
+git clone https://github.com/Sacramentix/sacramentix-fr.git
+cd sacramentix-fr
+```
+
+#### Node js
+- Make sure you have v14 or higher. You can install it from the official website [here](https://nodejs.org).
+
+#### Librairies
+- Install all the required librairies with 
+```npm i```
+
+#### Run in dev mode
+- Run this command
+```npm run dev```
+
+#### Build the project
+- Run this command
+```npm run build```
+
+#### Preview the project
+- Run this command
+```npm run preview```
+
+
+
