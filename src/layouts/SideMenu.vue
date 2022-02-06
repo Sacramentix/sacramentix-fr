@@ -1,4 +1,7 @@
 <template>
+    <div absolute inset-0 >
+        <slot></slot>
+    </div>
     <div SideMenu>
         <div>
             <transition name="slide">
@@ -47,15 +50,13 @@
             </label>
         </div>
     </div>
-    <div absolute inset-0>
-        <slot></slot>
-    </div>
 </template>
 <style lang="scss">
 [SideMenu] {
     isolation: isolate;
     display: flex;
     align-items: start;
+    z-index: 2;
     pointer-events: none;
     filter: var(--filter-shadow);
     > div {
