@@ -4,6 +4,9 @@ name: Lighthouse badge
 
 # Controls when the workflow will run
 on:
+
+  master:
+    
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -18,12 +21,37 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - name: Lighthouse-Badger
+      
+      - name: Netlify Actions
         # You may pin to the exact commit or the version.
-        # uses: MyActionWay/lighthouse-badger-action@0064f8e52023fe836d42f65e71231c54a93f7d0b
-        uses: MyActionWay/lighthouse-badger-action@v2.2
+        # uses: nwtgck/actions-netlify@b7c1504e00c6b8a249d1848cc1b522a4865eed99
+        uses: nwtgck/actions-netlify@v1.2.3
         with:
-          # URL(s) to be checked
-          urls: https://heuristic-boyd-c35f85.netlify.app/#/
-          # Badges arguments: -b, -l, -o, -r, -s
-          #badges_args: # optional, default is -b pagespeed -o lighthouse_results -r
+          # Publish directory
+          publish-dir: dist 
+          # Custom deploy message for Netlify
+          deploy-message: From github action
+#           # GitHub token
+#           github-token: # optional
+#           # Production branch
+#           production-branch: # optional
+#           # Indicate wether to deploy production build
+#           production-deploy: # optional
+#           # Enable pull request comment
+#           enable-pull-request-comment: # optional
+#           # Enable commit comment
+#           enable-commit-comment: # optional
+#           # Enable GitHub commit status
+#           enable-commit-status: true
+#     # Overwrites pull request comment
+#     overwrites-pull-request-comment: # optional
+#     # Path to netlify.toml
+#     netlify-config-path: # optional
+#     # Specifies the prefix for the deployment URL
+#     alias: # optional
+#     # Environment name of GitHub Deployments
+#     github-deployment-environment: # optional
+#     # Description of the GitHub Deployment
+#     github-deployment-description: # optional
+#     # Fails if no credentials provided
+#     fails-without-credentials: # optional
