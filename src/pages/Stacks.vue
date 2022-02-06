@@ -13,13 +13,7 @@
                 <p>{{ s.text }}</p>
                 <div links>
                     <h4>I use this stack in:</h4>
-                    <a
-                        clickable
-                        v-for="l in s.projects"
-                        :key="l.name"
-                        rel="noreferrer"
-                        :href="l.link"
-                    >{{ l.name }}</a>
+                    <external-link v-for="l in s.projects" :key="l.name" :link="l.link" :label="l.name"/>
                 </div>
             </div>
         </main>
@@ -106,6 +100,7 @@ import fastifySVG from "../assets/svg/stack/fastify.svg";
 import reactSVG from "../assets/svg/stack/react.svg";
 import haxeSVG from "../assets/svg/stack/haxe.svg";
 import OpenInNew from "../components/OpenInNew.vue";
+import ExternalLink from "../components/ExternalLink.vue";
 
 const stacks = [
     {
