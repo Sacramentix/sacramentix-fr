@@ -5,8 +5,6 @@
 declare module 'vue' {
   export interface GlobalComponents {
     Field: typeof import('./src/components/art/Field.vue')['default']
-    IconLogosGithubOctocat: typeof import('~icons/logos/github-octocat')['default']
-    IconMdiOpenInNew: typeof import('~icons/mdi/open-in-new')['default']
     NeonTriangle: typeof import('./src/components/art/NeonTriangle.vue')['default']
     OpenInNew: typeof import('./src/components/OpenInNew.vue')['default']
   }
