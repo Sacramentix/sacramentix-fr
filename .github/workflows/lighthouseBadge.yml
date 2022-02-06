@@ -22,10 +22,10 @@ on:
     inputs:
       urls:
         description: 'URL(s) to be checked'
-        required: true
+        required: false
       token_name:
         description: 'Target token name (NO VALUE!)'
-        required: true
+        required: false
 
 ########################################################################
 # THAT'S IT; YOU DON'T HAVE TO DEFINE ANYTHING IN THE FOLLOWING
