@@ -1,7 +1,4 @@
 <template>
-    <div absolute inset-0>
-        <slot></slot>
-    </div>
     <div SideMenu>
         <div>
             <transition name="slide">
@@ -9,45 +6,38 @@
                     <img logo :src="SLogo" width="256" height="256" alt="S shaped logo" />
                     <h1>Sacramentix</h1>
 
-                    <a clickable @click.prevent="$router.replace('/')" href="/">
-                        <icon-mdi-home text-teal />
-                        <p>Home</p>
-                    </a>
+                    <internal-link link="/" label="Home">
+                        <icon-mdi-home text-teal/>
+                    </internal-link>
 
-                    <a clickable @click.prevent="$router.replace('/projects')" href="/projects">
-                        <icon-mdi-projects text-green />
-                        <p>Projects</p>
-                    </a>
+                    <internal-link link="/projects" label="Projects">
+                        <icon-mdi-projects text-green/>
+                    </internal-link>
+                    
+                    <internal-link link="/ressources" label="Ressources">
+                        <icon-mdi-ressources text-red/>
+                    </internal-link>
+                    
+                    <internal-link link="/stacks" label="Stacks">
+                        <icon-mdi-stacks text-orange/>
+                    </internal-link>
 
-                    <a clickable @click.prevent="$router.replace('/ressources')" href="/ressources">
-                        <icon-mdi-ressources text-red />
-                        <p>Ressources</p>
-                    </a>
+                    <external-link link="https://github.com/Sacramentix" label="Github">
+                        <icon-mdi-github/>
+                    </external-link>
+                    
+                    <external-link link="https://codepen.io/sacramentix" label="Codepen">
+                        <icon-mdi-codepen/>
+                    </external-link>
 
-                    <a clickable @click.prevent="$router.replace('/stacks')" href="/stacks">
-                        <icon-mdi-stacks text-orange />
-                        <p>Stacks</p>
-                    </a>
+                    <external-link link="https://www.doyoubuzz.com/benjamin-gilloury" label="CV">
+                        <icon-mdi-cv text-orange/>
+                    </external-link>
 
-                    <a clickable href="https://github.com/Sacramentix" rel="noreferrer" target="_blank">
-                        <icon-mdi-github />
-                        <p>Github</p>
-                    </a>
+                    <external-link link="https://discord.gg/cUnxzGa" label="Discord">
+                        <icon-mdi-discord text-indigo-4/>
+                    </external-link>
 
-                    <a clickable href="https://codepen.io/sacramentix" rel="noreferrer" target="_blank">
-                        <icon-mdi-codepen />
-                        <p>Codepen</p>
-                    </a>
-
-                    <a clickable href="https://www.doyoubuzz.com/benjamin-gilloury" rel="noreferrer" target="_blank">
-                        <icon-mdi-cv text-orange />
-                        <p>CV</p>
-                    </a>
-
-                    <a clickable href="https://discord.gg/cUnxzGa" rel="noreferrer" target="_blank">
-                        <icon-mdi-discord text-indigo-4 />
-                        <p>Discord</p>
-                    </a>
                 </nav>
             </transition>
             <input id="showMenu" type="checkbox" v-model="showMenu" />
@@ -56,6 +46,9 @@
                 <p>Show the menu</p>
             </label>
         </div>
+    </div>
+    <div absolute inset-0>
+        <slot></slot>
     </div>
 </template>
 <style lang="scss">
@@ -105,6 +98,8 @@
 #showMenu, label[for="showMenu"]>p {
     position: fixed;
     left: -10000px;
+    background: white;
+    color: black;
 }
 label[for="showMenu"] {
     padding: 0.25em 0.35em;
@@ -147,5 +142,7 @@ import SLogo from "../assets/svg/logo.svg"
 import IconMdiPlay from "~icons/mdi/play"
 
 import { ref } from 'vue';
+import ExternalLink from "../components/ExternalLink.vue"
+import InternalLink from "../components/InternalLink.vue"
 const showMenu = ref(true);
 </script>
