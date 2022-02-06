@@ -5,8 +5,6 @@ name: Lighthouse badge
 # Controls when the workflow will run
 on:
 
-  master:
-    
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
