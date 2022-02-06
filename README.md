@@ -1,5 +1,7 @@
 # Sacramentix.fr
 
+This is the repo of my personnal website, where you can see my developer diaries.
+
 ## 🚀 Tech stack
 
 <p align="center">
