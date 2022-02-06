@@ -1,6 +1,9 @@
 # Sacramentix.fr
 
 This is the repo of my personnal website, where you can see my developer diaries.
+	<a href="https://htmlpreview.github.io/?https://github.com/Sacramentix/sacramentix-fr/blob/master/.github/lighthouse_results/mobile/sacramentix_netlify_app___.html" title="Click to see full detail">
+		<img src=".github/lighthouse_results/mobile/pagespeed.svg">
+	</a>
 
 ## 🚀 Tech stack
 
