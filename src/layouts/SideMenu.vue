@@ -6,25 +6,25 @@
         <div>
             <transition name="slide">
                 <nav v-if="showMenu">
-                    <img logo :src="SLogo" alt="S shaped logo" />
+                    <img logo :src="SLogo" width="256" height="256" alt="S shaped logo" />
                     <h1>Sacramentix</h1>
 
-                    <a clickable @click="$router.replace('/')">
+                    <a clickable @click.prevent="$router.replace('/')" href="/">
                         <icon-mdi-home text-teal />
                         <p>Home</p>
                     </a>
 
-                    <a clickable @click="$router.replace('/projects/')">
+                    <a clickable @click.prevent="$router.replace('/projects')" href="/projects">
                         <icon-mdi-projects text-green />
                         <p>Projects</p>
                     </a>
 
-                    <a clickable @click="$router.replace('/ressources/')">
+                    <a clickable @click.prevent="$router.replace('/ressources')" href="/ressources">
                         <icon-mdi-ressources text-red />
                         <p>Ressources</p>
                     </a>
 
-                    <a clickable @click="$router.replace('/stacks/')">
+                    <a clickable @click.prevent="$router.replace('/stacks')" href="/stacks">
                         <icon-mdi-stacks text-orange />
                         <p>Stacks</p>
                     </a>
