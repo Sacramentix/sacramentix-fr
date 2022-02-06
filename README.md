@@ -5,9 +5,9 @@ This is the repo of my personnal website, where you can see my developer diaries
 ## 🚀 Tech stack
 
 <p align="center">
-  <a href="https://vitejs.dev"><img width=32 height=32 src="https://vitejs.dev/logo.svg" alt="Vite logo"></a>
-	<a href="https://www.typescriptlang.org"><img width=32 height=32 src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" alt="Typescript logo"></a> 
-  <a href="https://github.com/antfu/unocss"><img width=32 height=32 src="https://raw.githubusercontent.com/antfu/unocss/main/playground/public/icon-gray.svg" alt="Unocss logo"></a>
+  <a href="https://vitejs.dev" title="Vite"><img width=32 height=32 src="https://vitejs.dev/logo.svg" alt="Vite logo"></a>
+	<a href="https://www.typescriptlang.org" title="Typescript"><img width=32 height=32 src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" alt="Typescript logo"></a> 
+  <a href="https://github.com/antfu/unocss title="Unocss"><img width=32 height=32 src="https://raw.githubusercontent.com/antfu/unocss/main/playground/public/icon-gray.svg" alt="Unocss logo"></a>
   
 </p>
 
