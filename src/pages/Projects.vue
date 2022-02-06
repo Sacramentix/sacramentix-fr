@@ -15,22 +15,17 @@
                     through the pages as quickly as possible to win.
                 </p>
                 <div links>
-                    <a
-                        clickable
-                        href="https://github.com/Sacramentix/WikiAdventure" rel="noreferrer"
-                        target="_blank"
-                    >
-                        <icon-mdi-github text-white />
-                        <p>Github</p>
-                    </a>
-                    <a clickable href="https://wiki-adventure.herokuapp.com" rel="noreferrer" target="_blank">
+                    <external-link link="https://github.com/Sacramentix/WikiAdventure" label="Github">
+                        <icon-mdi-github/>
+                    </external-link>
+
+                    <external-link link="https://wiki-adventure.herokuapp.com" label="The Website">
                         <icon-mdi-earth text-teal />
-                        <p>The website</p>
-                    </a>
-                    <a clickable href="https://discord.gg/wRN6Dam" rel="noreferrer" target="_blank">
-                        <icon-mdi-discord text-indigo-4 />
-                        <p>discord</p>
-                    </a>
+                    </external-link>
+
+                    <external-link link="https://discord.gg/wRN6Dam" label="Discord">
+                        <icon-mdi-discord text-indigo-4/>
+                    </external-link>
                 </div>
             </div>
 
@@ -39,10 +34,9 @@
                 <icon-logos-github-octocat width="600" height="600" />
                 <p>Check out my Github profile, I made most of my contribution on it.</p>
                 <div links>
-                    <a clickable href="https://github.com/Sacramentix" rel="noreferrer" target="_blank">
-                        <icon-mdi-github text-white />
-                        <p>Github</p>
-                    </a>
+                    <external-link link="https://github.com/Sacramentix" label="Github">
+                        <icon-mdi-github/>
+                    </external-link>
                 </div>
             </div>
         </main>
@@ -101,4 +95,5 @@ import IconMdiGithub from "~icons/mdi/github"
 import IconMdiDiscord from "~icons/mdi/discord"
 import IconMdiEarth from "~icons/mdi/earth"
 import IconLogosGithubOctocat from "~icons/logos/github-octocat"
+import ExternalLink from "../components/ExternalLink.vue";
 </script>
