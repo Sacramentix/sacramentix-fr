@@ -40,6 +40,10 @@
                     <external-link link="https://discord.gg/cUnxzGa" label="Discord">
                         <icon-mdi-discord text-indigo-4/>
                     </external-link>
+                    
+                    <external-link link="https://github.com/Sacramentix/sacramentix-fr" label="Website repo">
+                        <icon-mdi-github/>
+                    </external-link>
 
                 </nav>
             </transition>
